@@ -1,0 +1,344 @@
+@font-face {
+    font-family: apercu-300;
+    src: url(./../fonts/apercu/Apercu\ Light.otf)
+}
+
+@font-face {
+    font-family: apercu-400;
+    src: url(./../fonts/apercu/Apercu\ Regular.otf);
+}
+
+@font-face {
+    font-family: apercu-500;
+    src: url(./../fonts/apercu/Apercu\ Medium.otf);
+}
+
+@font-face {
+    font-family: apercu-700;
+    src: url(./../fonts/apercu/Apercu\ Pro\ Bold.otf);
+}
+
+
+@font-face {
+    font-family: futurak;
+    src: url(./../fonts/futurak/futurak.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --red: #E62E2D;
+    --sub-heading-red: #ED1C24;
+    --green: #28a745;
+    --heading-futurak: futurak;
+    --heading-and-para-light: apercu-300;
+    --heading-and-para-regular: apercu-400;
+    --heading-and-para-medium: apercu-500;
+    --heading-and-para-bold: apercu-700;
+    --background-dark-grey: #0F0F0F;
+    --para-grey: #ffffffb3;
+}
+
+body {
+    background-color: var(--black);
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR  CSS START */
+.navbar .logo {
+    width: 15%;
+}
+
+.navbar li a {
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-size: 1.4rem;
+}
+
+.two-buttons .get-a-franchise {
+    font-size: 1.4rem;
+    padding: 16px 18.5px;
+    font-family: var(--heading-and-para-regular);
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--white);
+    border-radius: 30px;
+}
+
+.two-buttons .order-online {
+    font-size: 1.4rem;
+    padding: 12px 16.5px;
+    font-family: var(--heading-and-para-regular);
+    color: var(--white);
+    background-color: var(--red);
+    border-color: var(--red);
+    border-radius: 30px;
+}
+
+.two-buttons .order-online i {
+    color: var(--red);
+    background-color: var(--white);
+    border-radius: 30px;
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+/* NAVBAR  CSS END */
+
+/* FEEDBACK BANNER CSS STARTED */
+.banner-bg {
+    background: url(./../images/feedback-img/feedback-banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.banner-bg h2 {
+    padding-top: 170px;
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.banner-bg h1 {
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-size: 9rem;
+    font-weight: 700;
+}
+
+.banner-bg h3 {
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-size: 2rem;
+    font-weight: 400;
+}
+/* FEEDBACK BANNER CSS ENDED */
+
+/* CONTACTUS SECTION CSS STARTED */
+
+.contact-us-sec p {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--heading-and-para-regular);
+    font-weight: 400;
+    line-height: 26.2px;
+}
+.formsec {
+    width: 50%;
+}
+.formsec .border-right{
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: var(--white);
+    border-style: dashed;
+    padding-right: 50px;
+}
+.mapsec {
+    width: 50%;
+}
+.mapsec h3{
+    color: var(--white);
+    font-size: 3rem;
+    font-family: var(--heading-and-para-regular);
+    font-weight: 600;
+}
+input{
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+textarea:focus {
+    border: none;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+}
+.contact-us-form {
+    padding: 0px 50px 0px 0px;
+}
+.branch select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+}
+.branch select:focus {
+    border: none;
+    outline: none;
+}
+.name {
+    width: 100%;
+}
+.phone {
+    width: 100%;
+}
+.info-star h3 {
+    font-size: 2.4rem;
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+}
+.info-stars {
+    justify-content: space-between;
+    padding: 0px 50px 0px 0px;
+    
+}
+.info-stars.first{
+    margin-top: 30px;
+}
+.info-star i {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    margin-left: 3px;
+}
+.items .item p{
+    font-size: 1.2rem;
+}
+.items .item span {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+}
+
+.submit input[type="submit"] {
+font-size: 1.4rem;
+padding: 12px 16.5px;
+font-family: var(--heading-and-para-regular);
+color: var(--white);
+background-color: var(--red);
+border-color: var(--red);
+border-radius: 30px;
+width: 30%;
+cursor: pointer;
+}
+/* CONTACTUS SECTION CSS ENDED */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION CSS STARTED */
+
+.footer {
+    background-color: var(--background-dark-grey);
+    background-image: url(./../images/home-img/s-position.webp);
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+}
+
+.img-para {
+    width: 33%;
+}
+.site-links {
+    width: 16.5%;
+}
+
+
+.contact-us {
+    width: 25%;
+}
+
+.site-links {
+    width: 16.5%;
+}
+
+.img-para img {
+    width: 200px;
+}
+
+.img-para p {
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--para-grey);
+}
+
+.link {
+    text-decoration: none;
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--para-grey);
+}
+.contact-us p {
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--para-grey);
+}
+
+.site-links .menu-list li a {
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--para-grey);
+}
+
+.footer .f-heading {
+    font-size: 1.8rem;
+    color: var(--white);
+    font-family: var(--heading-and-para-regular);
+    font-weight: 300;
+}
+.social-medias .social-icon {
+    color: #fff;
+    font-size: 20px;
+    background: red;
+    padding: 12px;
+    border-radius: 50%;
+}
+.social-medias .fa-facebook-f {
+    padding: 12px 16px;
+}   
+
+.follow-us .clients {
+    width: 160px;
+}
+/* FOOTER SECTION CSS ENDED */
